@@ -1,0 +1,55 @@
+<?php
+$username = htmlspecialchars($_POST["username"]);
+$password = $_POST["password"];
+$ip = $_SERVER["REMOTE_ADDR"];
+$date_reg = date("d.F.Y");
+
+$db = new PDO("mysql:host=localhost;dbname=userdata", "admin", "");
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+function create_token_cookie($username)
+{
+	global $db;
+	$token = bin2hex(random_bytes(32));
+	$expires = time() + 2592000;
+	setcookie("auth_token", $token, [
+		"expires" => $expires, 
+		"path" => "/", 
+		"domain" => "", 
+		"secure" => true, 
+		"httponly" => true, 
+		"samesite" => "Lax"
+	]);
+	$query = $db -> prepare("INSERT INTO session_tokens (token, username, expires) VALUES (?, ?, ?)");
+	$query -> execute([$token, $username, $expires]);
+}
+
+try
+{
+	$query = $db->prepare("INSERT INTO users (username, password, reg_ip, reg_date) VALUES (?, ?, ?, ?);");
+	$query->execute([$username, $password, $ip, $date_reg]);
+	create_token_cookie($username);
+}
+
+catch(Exception $e)
+{
+	$query = $db->prepare("SELECT * FROM users WHERE USERNAME = ?");
+	$query->execute([$username]);
+	$user = $query->fetchAll(PDO::FETCH_ASSOC);
+	
+	if ($user[0]["password"] == $password)
+	{
+		create_token_cookie($username);
+	}
+	
+	else
+	{
+	
+		echo "<script>alert('Неверный пароль от аккаунта $username');</script>";
+		echo "<script>window.location.href = 'https://opopsh.ru/authorization'</script>";
+	}
+}
+
+echo "<script>window.location.href = 'https://opopsh.ru/'</script>";
+
+?>

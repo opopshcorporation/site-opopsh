@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /account
+Disallow: /authorization
+Disallow: /header
+Disallow: /footer
+Disallow: /*?*
+Disallow: /pnd
+Disallow: /change
+
+Sitemap: https://opopsh.ru/sitemap.xml
