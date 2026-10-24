@@ -1,5 +1,5 @@
 <?php
-$username = htmlspecialchars($_POST["username"])
+$username = htmlspecialchars($_POST["username"]);
 $password = htmlspecialchars($_POST["password"]);
 $password_hash = password_hash($password, PASSWORD_DEFAULT);
 $ip = $_SERVER["REMOTE_ADDR"];
