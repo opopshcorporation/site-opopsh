@@ -41,8 +41,7 @@
 		<main>
 			<a href="createpost" id="create_post_link">Опубликовать пост</a>
 			<?php 
-			$db = new PDO("mysql:host=localhost;dbname=userdata", "admin", "barbarik!@34");
-			$db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			require_once "db.php";
 			$posts = $db->query("SELECT * FROM posts WHERE 1;");
 			$all_posts = $posts->fetchAll(PDO::FETCH_ASSOC);
 

@@ -4,8 +4,7 @@ $password = $_POST["password"];
 $ip = $_SERVER["REMOTE_ADDR"];
 $date_reg = date("d.F.Y");
 
-$db = new PDO("mysql:host=localhost;dbname=userdata", "admin", "");
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once "db.php";
 
 function create_token_cookie($username)
 {

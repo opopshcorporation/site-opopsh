@@ -29,7 +29,7 @@ $author = $userdata[0]["username"];
 		<h1>Создать пост</h1>
 		<main>
 			<form method="post" action="handler.php" enctype="multipart/form-data">
-				<p>Пост будет опубликован от имени: <input name="author" placeholder="<?php echo $author ?>" value="<?php echo $author ?>" readonly></p><br><br>
+				<p>Пост будет опубликован от имени: <input placeholder="<?php echo $author ?>" value="<?php echo $author ?>" readonly></p><br><br>
 				<input name="postname" placeholder="Тема поста" required><br><br>
 				Загрузить картинку: <input type="file" accept="image/*" name="loaded_image"><br><br>
 				<textarea name="posttext" placeholder="Текст поста" required></textarea><br><br>
