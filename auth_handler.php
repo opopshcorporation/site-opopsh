@@ -1,6 +1,6 @@
 <?php
-$username = htmlspecialchars($_POST["username"]);
-$password = htmlspecialchars($_POST["password"]);
+$username = $_POST["username"];
+$password = $_POST["password"];
 $password_hash = password_hash($password, PASSWORD_DEFAULT);
 $ip = $_SERVER["REMOTE_ADDR"];
 $date_reg = date("d.F.Y");
@@ -52,4 +52,4 @@ catch(Exception $e)
 
 echo "<script>window.location.href = 'https://opopsh.ru/'</script>";
 
-?>
+?>s

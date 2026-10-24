@@ -16,6 +16,7 @@ if (isset($_COOKIE["auth_token"]))
 else 
 {
 	echo '<script>window.location.href = "https://opopsh.ru/authorization";</script>';
+	exit();
 }
 
 ?>
