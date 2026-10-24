@@ -1,6 +1,7 @@
 <?php
-$username = htmlspecialchars($_POST["username"]);
-$password = $_POST["password"];
+$username = htmlspecialchars($_POST["username"])
+$password = htmlspecialchars($_POST["password"]);
+$password_hash = password_hash($password, PASSWORD_DEFAULT);
 $ip = $_SERVER["REMOTE_ADDR"];
 $date_reg = date("d.F.Y");
 
@@ -26,7 +27,7 @@ function create_token_cookie($username)
 try
 {
 	$query = $db->prepare("INSERT INTO users (username, password, reg_ip, reg_date) VALUES (?, ?, ?, ?);");
-	$query->execute([$username, $password, $ip, $date_reg]);
+	$query->execute([$username, $password_hash, $ip, $date_reg]);
 	create_token_cookie($username);
 }
 
@@ -36,7 +37,7 @@ catch(Exception $e)
 	$query->execute([$username]);
 	$user = $query->fetchAll(PDO::FETCH_ASSOC);
 	
-	if ($user[0]["password"] == $password)
+	if (password_verify($password, $user[0]["password"]))
 	{
 		create_token_cookie($username);
 	}

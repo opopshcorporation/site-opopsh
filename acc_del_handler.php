@@ -4,7 +4,7 @@ require_once "user_data_query.php";
 $user = $userdata[0]["username"];
 $sended_password = htmlspecialchars($_POST["password"]);
 
-if ($sended_password == $userdata[0]["password"])
+if (password_verify($sended_password, $userdata[0]["password"]))
 {
 	$query = $db -> prepare("DELETE FROM users WHERE username = ? ;");
 	$query -> execute([$user]);
