@@ -7,7 +7,7 @@ require_once "user_data_query.php";
 $query = $db->query("SELECT * FROM users WHERE 1");
 $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
-if (getimagesize($_FILES["loaded_image"]["tmp_name"]) !== false)
+if ($_FILES["loaded_image"]["size"] != 0)
 {
 	$mime_type = mime_content_type($_FILES["loaded_image"]["tmp_name"]);
 
@@ -20,7 +20,7 @@ if (getimagesize($_FILES["loaded_image"]["tmp_name"]) !== false)
 	];
 
 
-	if ($_FILES["loaded_image"]["size"] / 1000000 < 6.2 && isset($mime_to_extension[$mime_type]))
+	if (getimagesize($_FILES["loaded_image"]["tmp_name"]) !== false && $_FILES["loaded_image"]["size"] / 1000000 < 6.2 && isset($mime_to_extension[$mime_type]))
 	{
 		$loaded_image = file_get_contents($_FILES["loaded_image"]["tmp_name"]);
 		$file_name = bin2hex(random_bytes(16));
