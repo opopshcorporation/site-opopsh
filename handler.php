@@ -33,7 +33,7 @@ if ($_FILES["loaded_image"]["size"] != 0)
 	{
 		$image = "";
 		echo "<script>alert('Ваш файл превышает наш лимит размера в 6 МБ, или не соответствует формату png, jpg, webp или gif.');</script>";
-		echo '<script>window.location.href = "https://opopsh.ru";</script>';
+		echo '<script>window.location.href = "https://opopsh.ru/createpost";</script>';
 		exit();
 	}	
 }
