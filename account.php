@@ -42,7 +42,7 @@ $regdate = htmlspecialchars($userdata[0]["reg_date"]);
 			Пользователь зарегестрирован: <b><?php echo $regdate ?></b><br><br>
 			<button onclick="window.location.href = 'change?change=password'; ">Сбросить пароль</button>
 			<button onclick="window.location.href = 'delete_account'; "><b>Удалить аккаунт</b></button><br><br>
-			<button onclick="window.location.href = 'authorization'; "><b>Сменить аккаунт</b></button>  
+			<button onclick="window.location.href = 'logout'; "><b>Сменить аккаунт</b></button>  
 		</main>
 		<?php require_once "footer.php"; ?>	
 	</body>
