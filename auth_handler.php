@@ -27,7 +27,7 @@ function create_token_cookie($username)
 try
 {
 	$query = $db->prepare("INSERT INTO users (username, password, reg_ip, reg_date) VALUES (?, ?, ?, ?);");
-	$query->execute([$username, $password_hash, $ip, $date_reg]);
+	$query -> execute([$username, $password_hash, $ip, $date_reg]);
 	create_token_cookie($username);
 }
 
@@ -52,4 +52,4 @@ catch(Exception $e)
 
 echo "<script>window.location.href = 'https://opopsh.ru/'</script>";
 
-?>s
+?>

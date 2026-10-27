@@ -1,11 +1,11 @@
 <?php
-$postname = htmlspecialchars($_POST["postname"]);
-$posttext = htmlspecialchars($_POST["posttext"]);
+$postname = $_POST["postname"];
+$posttext = $_POST["posttext"];
 $publicationtime = date("d.M.Y");
 $ID = rand(0, 1000000000);
 require_once "user_data_query.php";
-$query = $db->query("SELECT * FROM users WHERE 1");
-$users = $query->fetchAll(PDO::FETCH_ASSOC);
+$query = $db -> query("SELECT * FROM users WHERE 1");
+$users = $query -> fetchAll(PDO::FETCH_ASSOC);
 
 if ($_FILES["loaded_image"]["size"] != 0)
 {
