@@ -56,7 +56,7 @@
 				echo htmlspecialchars($post['header']);
 				echo "</h2><br>";
 				echo "<b>";
-				echo htmlspecialchars($post['author'])." ".htmlspecialchars(date("Y-m-d H:i:s UTC", $post['publication_date']));
+				echo htmlspecialchars($post['author'])." ".htmlspecialchars(date("Y-m-d H:i:s UTC", $post['publication_date']))." UTC";
 				echo "</b><br>";
 				echo "<p>";
 				echo htmlspecialchars($post['post']);
