@@ -11,22 +11,25 @@ $image = match($img) {
 	6 => "https://opopsh.ru/images/decorations/mp3.webp"
 };
 
-$error = htmlspecialchars($_GET["error"] ?? 0);
+$error = (int)($_GET["error"] ?? 0);
 switch($error)
 {
 	case 404:
 		$header = "Ошибка 404 - данная страница не найдена.";
 		$p = "Вероятно, страница была удалена или ее ссылка была изменена.";
+		http_response_code(404);
 		break;
 
 	case 403:
 		$header = "Ошибка 403 - данная страница недоступна.";
 		$p = "Вероятно, вы были заблокированы или лишены права доступа к ней.";
+		http_response_code(403);
 		break;
 
 	default:
 		$header = "Неизвестная ошибка.";
 		$p = "Вероятно, страница была удалена или ее ссылка была изменена.";
+		http_response_code(404);
 		break;
 
 }
@@ -37,8 +40,8 @@ switch($error)
 		<title>Страница не доступна!</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="images/logotypes/logo.svg">
-		<link rel="stylesheet" href="style/opacity.css">
+		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
+		<link rel="stylesheet" href="/style/opacity.css">
 		<style>
 			body
 			{
@@ -66,7 +69,7 @@ switch($error)
 		</header>
 		<main>
 			<p><?php echo $p; ?></p>
-			<img src=<?php echo $image; ?> height=62 width=62><br>
+			<img src="<?php echo $image; ?>" height=62 width=62><br>
 			<button onclick="window.location.href = 'https://opopsh.ru/'; ">Перейти на главную</button>
 		</main>
 	</body>
