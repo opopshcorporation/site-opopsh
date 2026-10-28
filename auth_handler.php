@@ -3,7 +3,7 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 $password_hash = password_hash($password, PASSWORD_DEFAULT);
 $ip = $_SERVER["REMOTE_ADDR"];
-$date_reg = date("d.F.Y");
+$date_reg = time();
 
 require_once "db.php";
 
@@ -33,8 +33,8 @@ try
 
 catch(Exception $e)
 {
-	$query = $db->prepare("SELECT * FROM users WHERE USERNAME = ?");
-	$query->execute([$username]);
+	$query = $db -> prepare("SELECT * FROM users WHERE USERNAME = ?");
+	$query -> execute([$username]);
 	$user = $query->fetchAll(PDO::FETCH_ASSOC);
 	
 	if (password_verify($password, $user[0]["password"]))
