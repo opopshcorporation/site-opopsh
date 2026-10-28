@@ -1,7 +1,7 @@
 <?php
 $postname = $_POST["postname"];
 $posttext = $_POST["posttext"];
-$publicationtime = date("d.M.Y");
+$publicationtime = time();
 require_once "user_data_query.php";
 
 if ($_FILES["loaded_image"]["size"] != 0)

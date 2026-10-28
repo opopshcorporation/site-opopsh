@@ -42,11 +42,11 @@
 			<a href="createpost" id="create_post_link">Опубликовать пост</a>
 			<?php 
 			require_once "db.php";
-			$posts = $db->query("SELECT * FROM posts WHERE 1;");
+			$posts = $db->query("SELECT * FROM posts ORDER BY publication_date DESC;");
 			$all_posts = $posts->fetchAll(PDO::FETCH_ASSOC);
 
 			$i = 0;
-			foreach (array_reverse($all_posts) as $post) {
+			foreach ($all_posts as $post) {
 				echo "<hr>";
 				echo "<article id='publication_".$post['ID']."'>";
 				echo "<p>";
@@ -56,7 +56,7 @@
 				echo htmlspecialchars($post['header']);
 				echo "</h2><br>";
 				echo "<b>";
-				echo htmlspecialchars($post['author'])." ".htmlspecialchars($post['publication_date']);
+				echo htmlspecialchars($post['author'])." ".htmlspecialchars(date("Y-m-d H:i:s", $post['publication_date']));
 				echo "</b><br>";
 				echo "<p>";
 				echo htmlspecialchars($post['post']);
