@@ -3,7 +3,7 @@
 require_once "user_data_query.php";
 
 $username = htmlspecialchars($userdata[0]["username"]);
-$regdate = htmlspecialchars(date("Y:m:d", $userdata[0]["reg_date"]);
+$regdate = htmlspecialchars(date("Y:m:d", $userdata[0]["reg_date"]));
 
 ?>
 <!DOCTYPE html>
