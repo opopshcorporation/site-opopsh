@@ -2,10 +2,7 @@
 $postname = $_POST["postname"];
 $posttext = $_POST["posttext"];
 $publicationtime = date("d.M.Y");
-$ID = rand(0, 1000000000);
 require_once "user_data_query.php";
-$query = $db -> query("SELECT * FROM users WHERE 1");
-$users = $query -> fetchAll(PDO::FETCH_ASSOC);
 
 if ($_FILES["loaded_image"]["size"] != 0)
 {
@@ -44,7 +41,7 @@ else
 }
 
 
-$query = $db -> prepare("INSERT INTO posts (author, header, image_link, post, publication_date, ID) VALUES (?, ?, ?, ?, ?, ?);");
-$query -> execute([$userdata[0]["username"], $postname, $image, $posttext, $publicationtime, $ID]);
+$query = $db -> prepare("INSERT INTO posts (author, header, image_link, post, publication_date) VALUES (?, ?, ?, ?, ?);");
+$query -> execute([$userdata[0]["username"], $postname, $image, $posttext, $publicationtime]);
 echo '<script>window.location.href = "https://opopsh.ru";</script>';
 ?>
