@@ -14,7 +14,7 @@
 				background: url('images/decorations/img44.jpg'); 
 				background-size: cover;
 			}
-			h1
+			h1, form
 			{
 				text-align: center;
 			}
