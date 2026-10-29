@@ -8,7 +8,7 @@ $query = $db -> prepare("DELETE FROM session_tokens WHERE token = ? ;");
 $query -> execute([$auth_token]);
 setcookie("auth_token", "0", time() - 1, "/", "", true, true);
 
-header("location: https://opopsh.ru/authorization");
+header("location: https://opopsh.ru/login");
 exit();
 
 ?>
