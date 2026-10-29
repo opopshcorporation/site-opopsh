@@ -3,7 +3,7 @@ require_once "db.php";
 
 if (!isset($_COOKIE["auth_token"])) 
 {
-    header("Location: https://opopsh.ru/authorization");
+    header("Location: https://opopsh.ru/login");
     exit;
 }
 
@@ -26,6 +26,6 @@ $userdata = $userinfo->fetchAll(PDO::FETCH_ASSOC);
 
 if (empty($userdata)) 
 {
-    header("Location: https://opopsh.ru/authorization");
+    header("Location: https://opopsh.ru/login");
     exit;
 }
