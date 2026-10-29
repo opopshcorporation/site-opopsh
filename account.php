@@ -40,7 +40,7 @@ $regdate = htmlspecialchars(date("d.m.Y", $userdata[0]["reg_date"]));
 			<img src="images/decorations/my_network_places.webp" width=100 height=100><br>
 			<b>@<?php echo $username; ?></b><br>
 			Пользователь зарегестрирован: <b><?php echo $regdate ?></b><br><br>
-			<button onclick="window.location.href = 'change?change=password'; ">Сбросить пароль</button>
+			<button onclick="window.location.href = 'change_password'; ">Сбросить пароль</button>
 			<button onclick="window.location.href = 'delete_account'; "><b>Удалить аккаунт</b></button><br><br>
 			<button onclick="window.location.href = 'logout'; "><b>Сменить аккаунт</b></button>  
 		</main>
