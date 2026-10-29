@@ -1,9 +1,6 @@
 <?php
 $username = $_POST["username"];
 $password = $_POST["password"];
-$password_hash = password_hash($password, PASSWORD_DEFAULT);
-$ip = $_SERVER["REMOTE_ADDR"];
-$date_reg = time();
 
 require_once "db.php";
 
@@ -24,32 +21,23 @@ function create_token_cookie($username)
 	$query -> execute([$token, $username, $expires]);
 }
 
-try
+
+$query = $db -> prepare("SELECT * FROM users WHERE USERNAME = ?");
+$query -> execute([$username]);
+$user = $query -> fetch(PDO::FETCH_ASSOC);
+
+if ($user && password_verify($password, $user["password"]))
 {
-	$query = $db->prepare("INSERT INTO users (username, password, reg_ip, reg_date) VALUES (?, ?, ?, ?);");
-	$query -> execute([$username, $password_hash, $ip, $date_reg]);
 	create_token_cookie($username);
+	header("Location: https://opopsh.ru/");
+	exit;
 }
 
-catch(Exception $e)
+else
 {
-	$query = $db -> prepare("SELECT * FROM users WHERE USERNAME = ?");
-	$query -> execute([$username]);
-	$user = $query->fetchAll(PDO::FETCH_ASSOC);
-	
-	if (password_verify($password, $user[0]["password"]))
-	{
-		create_token_cookie($username);
-	}
-	
-	else
-	{
-	
-		echo "<script>alert('Неверный пароль от аккаунта $username');</script>";
-		echo "<script>window.location.href = 'https://opopsh.ru/authorization'</script>";
-	}
+	echo "<script>alert('Неверное имя пользователя или пароль');</script>";
+	echo '<script>window.location.href = "https://opopsh.ru/login";</script>';
+	exit;
 }
-
-echo "<script>window.location.href = 'https://opopsh.ru/'</script>";
 
 ?>
