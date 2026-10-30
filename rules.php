@@ -7,19 +7,6 @@
 		<link rel="shortcut icon" href="images/logotypes/logo.svg">
 		<meta name="description" content="Здесь вы можете узнать о правилах нашего сайта.">
 		<style>
-			body
-			{
-				font-family: Calibri;  
-				background: url('images/decorations/wallpaper.webp'); 
-				margin: 0;
-				padding: 0; 
-				background-size: cover;  
-				background-position: center; 
-				background-repeat: no-repeat; 
-				background-attachment: fixed; 
-				min-height: 100vh;	
-			}
-
 			#warning
 			{
 				color: black;
