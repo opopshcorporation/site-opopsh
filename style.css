@@ -16,6 +16,10 @@ body{
 	background-color: #262852;
 }
 
-footer, header{
+footer{
 	background-color: #1a162a;
+}
+
+header{
+	background-color: #4e1609;
 }
