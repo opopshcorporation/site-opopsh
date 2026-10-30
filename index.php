@@ -47,7 +47,7 @@
 				echo htmlspecialchars($post['header']);
 				echo "</h2><br>";
 				echo "<b>";
-				echo htmlspecialchars($post['author']).$trusted_icon." ".htmlspecialchars(date("Y-m-d H:i:s UTC", $post['publication_date']))." UTC";
+				echo htmlspecialchars($post['author']).$trusted_icon." ".htmlspecialchars(date("Y-m-d H:i:s", $post['publication_date']))." UTC";
 				echo "</b><br>";
 				echo "<p>";
 				echo htmlspecialchars($post['post']);
