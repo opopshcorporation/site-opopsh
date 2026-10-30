@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="images/logotypes/logo.svg">
 		<meta name="description" content="Здесь вы можете узнать о правилах нашего сайта.">
+		<link rel="stylesheet" href="/style.css">
 		<style>
 			#warning
 			{
