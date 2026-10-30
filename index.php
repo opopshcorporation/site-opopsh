@@ -7,22 +7,6 @@
 		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
 		<title>Opopsh</title>
 		<style>
-			body
-			{
-				font-family: Calibri; background: url('/images/decorations/wallpaper.webp'); 
-				background-attachment: fixed; 
-				background-size: cover; 
-				background-position: center; 
-				background-repeat: no-repeat; 
-				margin: 0; 
-				height: 100vh;
-			}
-
-			#create_post_link
-			{
-				color: white;
-			}
-
 			#message_icon
 			{
 				display: block; 
