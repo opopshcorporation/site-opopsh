@@ -6,6 +6,7 @@
 		<title>Кодинг</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="В этом разделе вы можете посмотреть разные программы на языках программирования.">
+		<link rel="stylesheet" href="/style.css">
 		<style>
 			h1, #podzagalovok
 			{
