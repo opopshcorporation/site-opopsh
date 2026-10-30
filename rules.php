@@ -41,7 +41,7 @@
 		</main>
 		<aside id="warning">
 			<img src="images/decorations/info.webp" height=35 width=35>
-			<i>ПРЕДУПРЕЖДЕНИЕ! При игнорировании правил, ваш аккаунт будет заблокирован.</i>
+			<i>ПРЕДУПРЕЖДЕНИЕ! При игнорировании правил, ваш аккаунт будет заблокирован администрацией сайта.</i>
 		</aside>
 		<?php require_once "footer.php"; ?>
 	</body>
