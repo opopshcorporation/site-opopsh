@@ -41,14 +41,14 @@
 				echo "<hr>";
 				echo "<article id='publication_".$post['ID']."'>";
 				echo "<p>";
-				echo "Поделиться ссылкой: <a href='https://opopsh.ru#publication_".$post['ID']."'>https://opopsh.ru#publication_".$post['ID']."</a>";
+				echo "<span>Поделиться ссылкой</span>: <a href='https://opopsh.ru#publication_".$post['ID']."'>https://opopsh.ru#publication_".$post['ID']."</a>";
 				echo "</p>";
 				echo "<h2>";
 				echo htmlspecialchars($post['header']);
 				echo "</h2><br>";
-				echo "<b>";
+				echo "<span><b>";
 				echo htmlspecialchars($post['author']).$trusted_icon." ".htmlspecialchars(date("Y-m-d H:i:s", $post['publication_date']))." UTC";
-				echo "</b><br>";
+				echo "</b></span><br>";
 				echo "<p>";
 				echo htmlspecialchars($post['post']);
 				echo "</p><br>";
