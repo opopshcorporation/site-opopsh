@@ -7,12 +7,6 @@
 		<link rel="shortcut icon" href="images/logotypes/logo.svg">
 		<meta name="description" content="Здесь вы можете узнать о правилах нашего сайта.">
 		<link rel="stylesheet" href="/style.css">
-		<style>
-			#warning
-			{
-				color: black;
-			}
-		</style>
 	</head>
 	<body>
 		<?php require_once "header.php"; ?>
@@ -27,7 +21,7 @@
 				<li>В имени пользователя или автора постов не может быть слов обозначающих порнографию, нецензурную брань.</li>							
 			</ol>
 		</main>
-		<aside id="warning">
+		<aside>
 			<i>Предупреждение! При игнорировании правил, ваш аккаунт будет заблокирован администрацией сайта.</i>
 		</aside>
 		<?php require_once "footer.php"; ?>
