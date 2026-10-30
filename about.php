@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="shortcut icon" href="images\logotypes\logo.svg">
+		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Здесь вы можете узнать подробнее о сайте Opopsh.">
-		<link rel="stylesheet" href="style/opacity.css">
+		<link rel="stylesheet" href="/style.css">
 		<title>О проекте</title>
 		<style>
 			aside, #do_you_know_header
