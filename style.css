@@ -1,25 +1,48 @@
-h1, p, h2, a, button, body, footer, header, textarea{
-	color: white;
+h1, p, h2, a, button, body, footer, header, textarea, is{
+	color: #f0f0f5;
 	font-family: Calibri;
 }
 
 a{
+  color: #ffd550;
 	text-decoration: underline;
 }
 
 button{
-	background-color: #ffd550;
+	color: #ffd550;
 }
 
 body{
+  padding-top: 120px;
 	padding-bottom: 70px;
-	background-color: #262852;
-}
-
-footer{
 	background-color: #1a162a;
 }
 
+article{
+  background-color: #262852;
+}
+
+header, footer {
+  background: #120f1f;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+}
+
 header{
-	background-color: #4e1609;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+span{
+  color: #a0a0b8;
 }
