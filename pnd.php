@@ -41,32 +41,7 @@ switch($error)
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
-		<style>
-			body
-			{
-				font-family: Calibri;  
-				background: url('https://opopsh.ru/images/decorations/US-wp4.jpg'); 
-				margin: 0;
-				padding: 0; 
-				background-size: cover;  
-				background-position: center; 
-				background-repeat: no-repeat; 
-				background-attachment: fixed; 
-				min-height: 100vh;	
-			}
-
-			h1, main
-			{
-				color: white;
-				text-align: center;
-			}
-
-			a
-			{
-				color: white;
-				text-decoration: underline;
-			}
-		</style>
+		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body>
 		<header>
