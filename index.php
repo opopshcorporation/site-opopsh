@@ -51,7 +51,7 @@
 			$i = 0;
 			foreach ($all_posts as $post) 
 			{
-				$trusted_icon = (in_array($post['author'], $trusted_names)) ? "<img src='/images/decorations/trusted.png' width=15 height=15>" : "";
+				$trusted_icon = (in_array($post['author'], $trusted_names)) ? "<img src='/images/decorations/trusted.png' width=15 height=15 alt='Пользователь подтвержден' title='Пользователь подтвержден'>" : "";
 
 				echo "<hr>";
 				echo "<article id='publication_".$post['ID']."'>";
