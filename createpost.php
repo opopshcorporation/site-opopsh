@@ -28,7 +28,6 @@ $author = htmlspecialchars($userdata[0]["username"]);
 				<input name="postname" placeholder="Тема поста" required><br><br>
 				Загрузить картинку: <input type="file" accept="image/*" name="loaded_image"><br><br>
 				<textarea name="posttext" placeholder="Текст поста" required></textarea><br><br>
-				<img src="images/decorations/info.webp" height=35 width=35>
 				Ваш файл должен соответствовать расширениям .png, .jpg, .webp, .gif и не быть более чем 6 МБ.<br><br>
 				<button type="submit">Опубликовать</button><br><br>
 			</form><br>
