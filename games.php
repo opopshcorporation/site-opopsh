@@ -37,7 +37,7 @@
 									<h2>Mikromir: EL</h2>
 									<img src="/images/decorations/mikromir.png" width="250" height="250">
 									<p>Миниатюрная биологическая игра-песочница с амебами,<br> инфузориями, бактериями и эвгленами</p>
-									<button onclick=" window.location.href = '/apps/MikromirEL_3_0.exe' ">Скачать</button>	
+									<a href="/apps/MikromirEL_3_0.exe">Скачать</a>
 								</article>
 							</td>
 							<td>
@@ -45,7 +45,7 @@
 									<h2>Kuba Ava 2</h2>
 									<img src="/images/decorations/kubaava2.png" width="250" height="250">
 									<p>Продолжение игры Kuba Ava, где добавлен новый режим Vityazevo.</p>
-									<button onclick=" window.location.href = '/apps/kubaava2.apk' ">Скачать</button>				
+									<a href="/apps/kubaava2.apk">Скачать</a>			
 								</article>
 							</td>							
 						</tr>
@@ -56,7 +56,7 @@
 									<img src="/images/decorations/funkclicker.png" width="250" height="250">
 									<h3>Бесплатно.</h3>
 									<p>Забавный кликер, где нужно покупать шарфики и ловить глазика из норок.</p>
-									<button onclick=" window.location.href = '/apps/funkclicker.zip' ">Скачать</button>
+									<a href="/apps/funkclicker.zip">Скачать</a>
 									<br><br><br>
 								</article>
 							</td>
