@@ -19,18 +19,6 @@ $regdate = htmlspecialchars(date("d.m.Y", $userdata[0]["reg_date"]));
 			{
 				text-align: center;
 			}
-
-			body
-			{
-				font-family: Calibri;  
-				background: url('images/decorations/img42.jpg'); 
-				background-attachment: fixed; 
-				background-size: cover; 
-				background-position: center; 
-				background-repeat: no-repeat; 
-				margin: 0; 
-				height: 100vh;
-			}
 		</style>
 	</head>
 	<body>
