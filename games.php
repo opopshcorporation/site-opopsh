@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Игры Opopsh</title>
 		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
+		<link rel="stylesheet" href="/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="В этом разделе вы можете посмотреть и скачать наши игры.">
 		<style>
