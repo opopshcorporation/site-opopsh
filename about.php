@@ -17,18 +17,13 @@
 			{
 				text-align: center;
 			}
-
-			#sitedescription
-			{
- 				background-color: white;
-			}
 		</style>
 	</head>
 	<body>
 		<?php require_once "header.php"; ?>
 		<h1>О проекте Opopsh</h1>
 		<main>
-			<div id="sitedescription">
+			<div>
 				<b>Opopsh</b> - <u>информационный сайт</u>, на котором вы сможете
 				скачивать наши проекты и практиковаться программированию собственных приложений на наших примерах! Также вы можете сохранять свои покупки и публиковать посты, создав аккаунт.
 				<br>
@@ -45,13 +40,13 @@
 			switch ($question)
 			{
 				case 0:
-					echo "<textarea readonly cols=70 rows=1>что проект Opopsh изначально планировался, как телепередача?</textarea>";
+					echo "<h2>что проект Opopsh изначально планировался, как телепередача?</h2>";
 					break;
 				case 1:
-					echo "<textarea readonly cols=70 rows=1>что проектом Opopsh занимается только один человек?</textarea>";
+					echo "<h2>что проектом Opopsh занимается только один человек?</h2>";
 					break;
 				case 2:
-					echo "<textarea readonly cols=70 rows=1>что сайт Opopsh появился в 2021 году, как сайт opopsh.net?</textarea>";
+					echo "<h2>что сайт Opopsh появился в 2021 году, как сайт opopsh.net?</h2>";
 					break;
 			}
 			?>
