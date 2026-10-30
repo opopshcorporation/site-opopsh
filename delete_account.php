@@ -12,12 +12,6 @@ $user = $userdata[0]["username"];
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Удаление аккаунта Opopsh</title>
 		<style>
-			body
-			{
-				font-family: Calibri; 
-				background: url('images/decorations/wallpaper3.png'); 
-				background-size: cover;
-			}
 			h1, form
 			{
 				text-align: center;
