@@ -12,6 +12,12 @@
 			{
 				text-align: center;	
 			}
+
+			textarea
+			{
+				color: black;
+				font-family: monospace;
+			}
 		</style>		
 	</head>
 	<body>
