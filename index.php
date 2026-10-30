@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Добро пожаловать на сайт Opopsh!">
+		<link rel="stylesheet" href="/style.css">
 		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
 		<title>Opopsh</title>
 		<style>
