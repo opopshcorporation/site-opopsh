@@ -12,7 +12,7 @@ $regdate = htmlspecialchars(date("d.m.Y", $userdata[0]["reg_date"]));
 		<link rel="shortcut icon" href="images\logotypes\logo.svg">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style/opacity.css">
+		<link rel="stylesheet" href="style.css">
 		<title>Мой аккаунт</title>
 		<style>
 			main
