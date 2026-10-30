@@ -8,12 +8,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Сброс пароля</title>
 		<style>
-			body
-			{
-				font-family: Calibri; 
-				background: url('images/decorations/img44.jpg'); 
-				background-size: cover;
-			}
 			h1, form
 			{
 				text-align: center;
