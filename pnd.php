@@ -43,7 +43,7 @@ switch($error)
 		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
 		<link rel="stylesheet" href="/style.css">
 		<style>
-			main{
+			main, h1{
 				text-align: center;
 			}
 		</style>
