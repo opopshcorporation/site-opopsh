@@ -10,14 +10,9 @@ $author = htmlspecialchars($userdata[0]["username"]);
 		<link rel="shortcut icon" href="images\logotypes\logo.svg">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/style.css">
 		<title>Создать пост</title>
 		<style>
-			body
-			{
-				font-family: Calibri; 
-				background: url('images/decorations/wallpaper.webp'); 
-				background-size: cover;
-			}
 			h1, form
 			{
 				text-align: center;
