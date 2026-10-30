@@ -69,7 +69,7 @@ switch($error)
 		<main>
 			<p><?php echo $p; ?></p>
 			<img src="<?php echo $image; ?>" height=62 width=62><br>
-			<button onclick="window.location.href = 'https://opopsh.ru/'; ">Перейти на главную</button>
+			<a href="https://opopsh.ru/">На главную</a>
 		</main>
 	</body>
 </html>
