@@ -22,7 +22,7 @@
 			<input type="password" placeholder="Текущий пароль" name="current_password" required><br><br>
 			<input type="password" placeholder="Новый пароль" name="new_password" required><br><br>
 			<input type="password" placeholder="Подтвердите пароль" name="confirm_password" required><br><br>
-			<p><b>i</b> После смены пароля вам придется заново войти в аккаунт.</p><br>
+			<p>После смены пароля вам придется заново войти в аккаунт.</p><br>
 			<button type="submit">Подтвердить</button>
 		</form>
 		<?php require_once "footer.php"; ?>
