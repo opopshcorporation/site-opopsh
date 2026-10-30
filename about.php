@@ -18,18 +18,6 @@
 				text-align: center;
 			}
 
-			body
-			{
-				font-family: Calibri;  
-				background: url('images/decorations/wallpaper.webp'); 
-				background-attachment: fixed; 
-				background-size: cover; 
-				background-position: center; 
-				background-repeat: no-repeat; 
-				margin: 0; 
-				height: 100vh;
-			}
-
 			#sitedescription
 			{
  				background-color: white;
