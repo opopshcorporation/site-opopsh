@@ -60,6 +60,12 @@ switch($error)
 				color: white;
 				text-align: center;
 			}
+
+			a
+			{
+				color: white;
+				text-decoration: underline;
+			}
 		</style>
 	</head>
 	<body>
