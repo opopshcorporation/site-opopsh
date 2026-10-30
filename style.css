@@ -1,3 +1,21 @@
-body {
-    padding-bottom: 120px; 
+h1, p, h2, a, button, body{
+	color: white;
+	font-family: Calibri;
+}
+
+a{
+	text-decoration: underline;
+}
+
+button{
+	background-color: #ffd550;
+}
+
+body{
+	padding-bottom: 100px;
+	background-color: #262852;
+}
+
+footer, header{
+	background-color: #1a162a;
 }
