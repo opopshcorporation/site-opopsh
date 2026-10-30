@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<link rel="shortcut icon" href="/images/logotypes/logo.svg">
+		<link rel="stylesheet" href="/style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Войти</title>
@@ -9,24 +10,6 @@
 			h1, form, main
 			{
 				text-align: center;
-			}
-
-			body
-			{
-				font-family: Calibri;  
-				background: url('/images/decorations/wallpaper2.jpg'); 
-				background-attachment: fixed; 
-				background-size: cover; 
-				background-position: center; 
-				background-repeat: no-repeat; 
-				margin: 0; 
-				height: 100vh;
-			}
-
-			#signbtn
-			{
-				background-color: transparent;
-				border-color: transparent;
 			}
 		</style>
 	</head>
