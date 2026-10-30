@@ -22,7 +22,7 @@
 			<form action="reg_handler" method="post">
 				<input name="username" placeholder="Имя пользователя" required maxlength="20"><br><br>
 				<input name="password" type="password" placeholder="Пароль" required maxlength="100"><br><br>
-				<button type="submit" id="signbtn"><img src="images/decorations/nextbtn.png" height=50 width=50></button><br><br>
+				<button type="submit" id="signbtn">Создать аккаунт</button><br><br>
 				<button type="reset">Сбросить</button><br><br>
 				<a href="https://opopsh.ru/login">Войти в существующий аккаунт</a>
 			</form>
