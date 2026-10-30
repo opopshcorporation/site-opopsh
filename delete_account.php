@@ -8,6 +8,7 @@ $user = $userdata[0]["username"];
 <html lang="ru">
 	<head>
 		<link rel="shortcut icon" href="images\logotypes\logo.svg">
+		<link rel="stylesheet" href="/style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Удаление аккаунта Opopsh</title>
