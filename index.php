@@ -65,7 +65,6 @@
 
 			if ($i==0)
 			{
-				echo '<img id="message_icon" src="images/decorations/info.webp" alt="Note for user icon">';
 				echo "<h1 id='message_header'>В настоящее время постов на сайте нету</h1>";
 				echo "<p id='message_description'>Вы можете стать первым!</p>";
 			}
