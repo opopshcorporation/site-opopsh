@@ -25,7 +25,7 @@ $regdate = htmlspecialchars(date("d.m.Y", $userdata[0]["reg_date"]));
 		<?php require_once "header.php"; ?>
 		<main>
 			<h1>Мой аккаунт</h1>
-			<img src="images/decorations/my_network_places.webp" width=100 height=100><br>
+			<img src="/images/decorations/user.webp" width=100 height=100><br>
 			<b>@<?php echo $username; ?></b><br>
 			Пользователь зарегестрирован: <b><?php echo $regdate ?></b><br><br>
 			<a href = "/change_password">Сбросить пароль</a><br><br>
