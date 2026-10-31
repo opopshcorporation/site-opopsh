@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<h1>
-			<img src="images/decorations/my_network_places.webp" width=100 height=100><br>
+			<img src="/images/decorations/user.webp" width=100 height=100><br>
 			Регистрация
 		</h1>
 		<main>
