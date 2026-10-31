@@ -14,15 +14,26 @@
 Причина выбора: Популярная и несложная СУБД для небольших проектов, хорошо работает с PHP
 <hr>
 <br>
+<h2>Безопасность</h2>
+<menu>
+<li>Сайт защищен от <b>SQL-инъекций</b>. Запросы, использующие данные от ввода пользователя работают через <b>подготовленные запросы(prepare + execute).</b></li>
+<li>Сайт защищен от <b>XSS</b>. Ввод пользователя экранируется через <b>htmlspecialchars</b>, а также все алгоритмы сайта продуманы и безопасны.</li>
+<li>Сайт защищен от <b>CSRF</b>. Злоумышленники не смогут перехватить файлы cookie, а также их прочитать. <b>Защита от XSS прямо влияет на этот пункт.</b> Cookie защищены параметром <b>samesite=Lax</b>. </li>
+<li>Мошенники или хакеры не смогут получить доступ к БД, потому что предыдущие пункты защищают от опасных запросов, а также зайти на PhpMyAdmin может только владелец через localhost или 127.0.0.1, это указано в конфиге nginx.</li>
+<li>При публикации поста сайт проверяет файл, загружаемый пользователем. Он может быть только картинкой, это проверяется через <b>getimagesize</b>. Если функция не смогла определить размеры картинки - значит он ею не является. Злоумышленник не сможет загрузить вирус.</li>
+</menu>
+<hr>
+<br>
 <h2><b>Скриншоты:</b></h2>
 <ol>
-<li>Главная страница: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(706).png?raw=true"></li><br>
-<li>Страница о проекте: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(707).png?raw=true"></li><br>
-<li>Страница с игровыми проектами: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(708).png?raw=true"></li><br>
-<li>Страница с примерами кода: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(710).png?raw=true"></li><br>
-<li>Страница управления аккаунтом: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(712).png?raw=true"></li><br>
-<li>Страница авторизации: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(713).png?raw=true"></li><br>
-<li>Страница публикации поста: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(714).png?raw=true"></li><br>
+<li>Главная страница: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/home.png?raw=true"></li><br>
+<li>Страница о проекте: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/about.png?raw=true"></li><br>
+<li>Страница с игровыми проектами: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/games.png?raw=true"></li><br>
+<li>Страница с примерами кода: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/coding.png?raw=true"></li><br>
+<li>Страница управления аккаунтом: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/account.png?raw=true"></li><br>
+<li>Страница сброса пароля: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/p_reset.png?raw=true"></li><br>
+<li>Страница публикации поста: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/createpost.png?raw=true"></li><br>
+<li>Страница удаления аккаунта: <img src="https://github.com/opopshcorporation/site-opopsh/blob/main/screenshots/delete_account.png?raw=true"></li><br>
 </ol>
 <hr>
 <br>
